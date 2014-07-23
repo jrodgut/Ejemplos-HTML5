@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carrito Compra 2</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<article>
+			<header>
+				<h1>TIENDA ONLINE</h1>
+			</header>
+			<section>
+				<div id="piece_container">
+					<table>
+						<thead>
+							<tr>
+								<th>IMAGEN</th>
+								<th>DESCRIPCIÓN</th>
+								<th>PRECIO</th>
+								<th>CANTIDAD</th>
+								<th>COMPRAR</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img id="p1" class="piece tiny" src="dell.jpg" data-name="s1" draggable="true" data-target="carrito">
+								</td>
+								<td>
+									<span id="s1">Ordenador DELL</span>
+								</td>
+								<td id="price1">987€</td>
+								<td>
+									<input type="number" id="n1" value="0"/>
+								</td>
+								<td>
+									<button class="comprar_button" data-id="1" data-price="price1" data-name="s1" data-amount="n1">Comprar</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img id="p2" class="piece tiny" src="sony.jpg" data-name="s2" draggable="true"data-target="carrito">
+								</td>
+								<td>
+									<span id="s2">Ordenador SONY</span>
+								</td>
+								<td id="price2">787€</td>
+								<td>
+									<input type="number" id="n2" value="0"/>
+								</td>
+								<td>
+									<button class="comprar_button" data-id="2" data-price="price2" data-name="s2" data-amount="n2">Comprar</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img id="p3" class="piece tiny" src="apple.jpg" data-name="s3" draggable="true"data-target="carrito">
+								</td>
+								<td>
+									<span id="s3">Ordenador APPLE</span>
+								</td>
+								<td id="price3">1073€</td>
+								<td>
+									<input type="number" id="n3" value="0"/>
+								</td>
+								<td>
+									<button class="comprar_button" data-id="3" data-price="price3" data-name="s3" data-amount="n3">Comprar</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img id="p4" class="piece tiny" src="pb.jpg" data-name="s4" draggable="true" data-target="carrito">
+								</td>
+								<td>
+									<span id="s4">Ordenador PBELL</span>
+								</td>
+								<td id="price4">585€</td>
+								<td>
+									<input type="number" id="n4" value="0"/>
+								</td>
+								<td>
+									<button class="comprar_button" data-id="4" data-price="price4" data-name="s4" data-amount="n4">Comprar</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img id="p5" class="piece tiny" src="acer.jpg" data-name="s5" draggable="true" data-target="carrito">
+								</td>
+								<td>
+									<span id="s5">Ordenador ACER</span>
+								</td>
+								<td id="price5">889€</td>
+								<td>
+									<input type="number" id="n5" value="0"/>
+								</td>
+								<td>
+									<button class="comprar_button" data-id="5" data-price="price5" data-name="s5" data-amount="n5">Comprar</button>
+								</td>
+							</tr>
+						</tbody>						
+					</table>
+				</div>								
+			</section>
+			<aside id="carrito_container">
+				<header>
+					<h3>Este es el estado de tu carrito</h3>
+				</header>
+				<table id="compra">
+					<thead>
+						<tr>
+							<td>PRO</td>
+							<td>PRECIO</td>
+							<td>UNDS</td>
+							<td>TOTAL</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+					</body>
+					<tfoot>
+						<tr>
+							<td colspan=5%>
+								<span>PRECIO TOTAL DE LA COMPRA</span><br/>
+								<span id="total">0</span>€
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</aside>
+		</article>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+	margin : 0px;
+	padding : 0px;
+}
+body{
+	background-color: orange;
+}
+.hidden{
+	display : none;
+}
+button{
+	background-color : #d4c8c8;
+	padding: 0.5em;
+	border-radius:5px;
+	text-align:center;
+	border-color : #69498f;
+}

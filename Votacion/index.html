@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Votación</title>
+		<meta charset="utf-8">
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<h1>Bienvenidos a esta votación</h1>
+		
+		<details>
+			<summary>
+				Progreso de la votación <progress id="pb_total" max="100" value="0"></progress> <span id="votos_rx_per">0</span>%
+			</summary>
+			<p>Nº de votos necesario: 100</p>
+			<p>Nº de votos recibidos: <span id="votos_rx">0</span></p>
+		</details>
+		
+		<h2>La pregunta para hoy es la siguiente:</h2>
+		
+		<h3>¿Qué lenguaje de programación tiene más futuro?</h3>
+		
+		<ul>
+			<li>Lenguaje C# <button id="button1" type="button">VOTAR</button></li>
+			<li>Lenguaje Java <button id="button2" type="button">VOTAR</button></li>
+			<li>Lenguaje Phython <button id="button3" type="button">VOTAR</button></li>
+		</ul>
+		
+		<h3>Los resultados...</h3>
+		
+		<ul>
+			<li>Lenguaje C# <progress id="pb_c_sharp" max="100" value="0"></progress> <span id="votos_rx_c_sharp">0 votos</span></li>
+			<li>Lenguaje Java <progress id="pb_java" max="100" value="0"></progress> <span id="votos_rx_java">0 votos</span></li>
+			<li>Lenguaje Phython <progress id="pb_python" max="100" value="0"></progress> <span id="votos_rx_python">0 votos</span></li>
+		</ul>
+	</body>
+</html>

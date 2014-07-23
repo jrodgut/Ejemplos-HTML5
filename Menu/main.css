@@ -1,0 +1,85 @@
+*{
+	margin : 0px;
+	padding : 0px;
+}
+
+body{
+	background-color : white;
+}
+
+nav{
+	background-color : #b6b4b4;
+	width : 25%;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	border-radius : 10px;
+	text-align:center;
+	margin : 1em;
+}
+
+a{
+	text-decoration:none;
+}
+
+li {
+	list-style: none;
+}
+
+nav > ul  > li {
+	margin : 0.5em;
+}
+
+@keyframes animSubmenu{
+	25% {transform: rotate3d(1, 1 , 1, 90deg);}
+	50% {transform: rotate3d(1, 1 , 1, 180deg);}
+	75% {transform: rotate3d(1, 1 , 1, 270deg);}
+	100% {transform: rotate3d(1, 1 , 1, 360deg);}
+}
+
+@-webkit-keyframes animSubmenuwk{
+	25% {-webkit-transform: rotate3d(1, 1 , 1, 90deg);}
+	50% {-webkit-transform: rotate3d(1, 1 , 1, 180deg);}
+	75% {-webkit-transform: rotate3d(1, 1 , 1, 270deg);}
+	100% {-webkit-transform: rotate3d(1, 1 , 1, 360deg);}
+}
+
+nav > ul  > li  > ul{
+	margin : 0.5em;
+	display : none; /*ocultos al principio*/
+	animation-name: animSubmenu;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	-webkit-animation-name: animSubmenuwk;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+}
+
+nav > ul  > li  > ul > li{
+	margin : 0.5em;
+}
+
+nav > ul  > li  > a {
+	display: block;
+	background-color : #994dbd;
+	width : 80%;
+	margin : auto;
+	border-color: gray;
+	border-style: solid;
+	border-width: 3px;
+	transition-property: background-color;
+	transition-timing-function: linear;
+	transition-duration: 3s;
+	transition-delay: 1;
+}
+nav > ul  > li  > ul  > li > a {
+	display: block;
+	background-color : #5ea3e3;
+	width : 80%;
+	margin : auto;
+	border-color: gray;
+	border-style: solid;
+	border-width: 3px;
+}

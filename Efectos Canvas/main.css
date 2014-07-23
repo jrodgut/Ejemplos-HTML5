@@ -1,0 +1,75 @@
+*{
+	margin : 0px;
+	padding : 0px;
+}
+
+body{
+	background-color : white;
+}
+
+#tiny_container{
+	width: 415px;
+	margin : auto;
+	
+}
+.tiny{
+	width: 90px;
+	height: 90px;
+	margin : 2px;
+	border-color: #b6b4b4;
+	border-style: solid;
+	border-width: 3px;
+}
+#zoom_container{
+	width: 415px;
+	height: 415px;
+	background-color : #b6b4b4;
+	margin : auto;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	border-radius : 10px;
+}
+@keyframes rotacion360{
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(270deg);}
+	100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes rotacion360wk{
+	25% {-webkit-transform: rotate(90deg);}
+	50% {-webkit-transform: rotate(180deg);}
+	75% {-webkit-transform: rotate(270deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+.zoom{
+	width: 90px;
+	height: 90px;
+	margin : 5px;
+	animation-name: rotacion360;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	-webkit-animation-name: rotacion360wk;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+}
+
+.pic{
+	transition-property: width, height;
+	transition-timing-function: linear;
+	transition-duration: 1s;
+	transition-delay: 2s, 3s;
+}
+
+section{
+	background-color : #727171;
+	width: 435px;
+	padding : 10px;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	border-radius : 10px;
+	margin : auto;
+}

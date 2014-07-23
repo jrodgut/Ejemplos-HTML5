@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reproductores multimedia</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<article>
+			<section>
+				<header>
+					<h1>Reproductor de VÍDEO</h1>
+				</header>
+				
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<video id="video_player">
+									<source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.webm" type="video/webm">
+									<source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">								
+									<source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+								</video>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="row">
+									<button id="video_play">Play</button>
+									<button id="video_pause" class="hidden">Pausa</button>
+									<button id="video_stop">Stop</button>
+									<input type="range" id="video_volume" min="0" max="1" step="0.1" value="1">
+									<button id="video_silence">Silencio</button>
+								</div>
+								<div class="row">
+									<progress id="video_progress" max="1" value="0"></progress>
+								</div>
+								<div class="row">
+									<span id="video_status" class="hidden">
+										<output id="video_now"></output>
+										/
+										<output id="video_duration"></output>
+									</span>									
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>				
+			</section>
+			
+			<section>
+				<header>
+					<h1>Reproductor de AUDIO</h1>
+				</header>
+				
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<audio id="audio_player">
+									<source src="http://www.music.helsinki.fi/tmt/opetus/uusmedia/esim/a2002011001-e02-ulaw.wav" type="audio/wav">
+									<source src="http://www.music.helsinki.fi/tmt/opetus/uusmedia/esim/a2002011001-e02-128k.ogg" type="audio/ogg">			<source src="http://www.music.helsinki.fi/tmt/opetus/uusmedia/esim/a2002011001-e02-128k.mp3" type="audio/mpeg">
+								</audio>
+								<div class="row">
+									<button id="audio_play">Play</button>
+									<button id="audio_pause">Pausa</button>
+									<button id="audio_stop">Stop</button>
+									<input type="range" id="audio_volume" min="0" max="1" step="0.1" value="1">
+									<button id="audio_silence">Silencio</button>
+								</div>
+								<div class="row">
+									<progress id="audio_progress" max="1" value="0"></progress>
+								</div>
+								<div class="row">
+									<span id="audio_status" class="hidden">
+										<output id="audio_now"></output>
+										/
+										<output id="audio_duration"></output>
+									</span>									
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</section>
+		</article>
+	</body>
+</html>

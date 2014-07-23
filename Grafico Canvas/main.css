@@ -1,0 +1,63 @@
+*{
+	margin : 0px;
+	padding : 0px;
+}
+
+h1{
+	text-align : center;
+}
+
+body{
+	background-color : gray;
+	text-align : center;
+}
+
+table{
+	float : left;
+	border : 2px solid black;
+	margin : 2em;
+	margin-top : 6em;	
+	border-collapse : collapse;
+}
+td{
+	border : 2px solid black;
+}
+
+canvas{
+	float : left;
+	border : 2px solid black;
+	margin : 2em;
+}
+
+input[type="number"]{
+	width : 4em;
+}
+
+label{
+	display:block;
+	min-width : 150px;
+	width : 100%;
+	height : 100%;
+}
+
+label[for="grupo1"]{
+	background-color : #82e970;
+}
+label[for="grupo2"]{
+	background-color : #ec4420;
+}
+label[for="grupo3"]{
+	background-color : #be43ee;
+}
+label[for="grupo4"]{
+	background-color : #dbe71c;
+}
+label[for="grupo5"]{
+	background-color : #d6156a;
+}
+button{
+	padding: 0.5em;
+	border-radius:5px;
+	text-align:center;
+	margin:0.5em;
+}

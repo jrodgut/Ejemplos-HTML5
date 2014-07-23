@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gráfico Canvas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<article>
+			<section>
+				<header>
+					<h1>Gráfico circular dinámico</h1>
+				</header>
+				<div>
+					<canvas width="500" height="500" id="canvas_grafico">
+						Su navegador no soporta canvas
+					</canvas>
+				</div>
+				<form>
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">Introduce los datos</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><label for="grupo1">Grupo 1</label></td>
+								<td><input type="number" class="grupos" id="grupo1" step="1" min="0" max="100" value="0"></td>
+							</tr>
+							<tr>
+								<td><label for="grupo2">Grupo 2</label></td>
+								<td><input type="number" class="grupos" id="grupo2" step="1" min="0" max="100" value="0"></td>
+							</tr>
+							<tr>
+								<td><label for="grupo3">Grupo 3</label></td>
+								<td><input type="number" class="grupos" id="grupo3" step="1" min="0" max="100" value="0"></td>
+							</tr>
+							<tr>
+								<td><label for="grupo4">Grupo 4</label></td>
+								<td><input type="number" class="grupos" id="grupo4" step="1" min="0" max="100"  value="0"></td>
+							</tr>
+							<tr>
+								<td><label for="grupo5">Grupo 5</label></td>
+								<td><input type="number" class="grupos" id="grupo5" step="1" min="0" max="100"  value="0"></td>
+							</tr>
+							<tr>
+								<td colspan="2"><button id="button_graficar">Graficar</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</section>
+		</article>
+	</body>
+</html>

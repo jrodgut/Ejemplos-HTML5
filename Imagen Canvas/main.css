@@ -1,0 +1,17 @@
+*{
+	margin : 0px;
+	padding : 0px;
+}
+
+h1{
+	text-align : center;
+}
+
+div{
+	float : left;
+	margin : 1em;
+}
+
+body{
+	background-color : gray;
+}

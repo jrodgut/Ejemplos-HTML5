@@ -1,0 +1,27 @@
+*{
+	margin : 0px;
+	padding : 0px;
+}
+
+fieldset{
+	border : 0;
+}
+
+tbody tr [colspan="2"]{
+	background-color : #d590f6 !important;
+	text-align: center !important;
+}
+
+thead tr [colspan="2"]{
+	background-color : #90d2f6 !important;
+	text-align: center !important;
+}
+
+tbody td:first-child{
+	background-color : #807f7f;
+	text-align: right;
+}
+
+tbody td{
+	background-color : #c1c0c0;
+}

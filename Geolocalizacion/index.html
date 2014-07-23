@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Geolocalización</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="funcionDistancia.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>			
+		<article>
+			<header>
+				<h1 class="purple">Controla la distancia recorrida</h1>
+			</header>
+			<table>
+				<tbody>
+					<tr>
+						<td class="purple"></td>
+						<td class="purple">LATITUD</td>
+						<td class="purple">LONGITUD</td>
+					</tr>
+					<tr>
+						<td class="purple">INICIO</td>
+						<td>
+							<span id="ini_lat"><span>
+						</td>
+						<td>
+							<span id="ini_lon"><span>
+						</td>
+					</tr>
+					<tr>
+						<td class="purple">ACTUAL</td>
+						<td>
+							<span id="lat"><span>
+						</td>
+						<td>
+							<span id="lon"><span>
+						</td>
+					</tr>
+					<tr>
+						<td class="purple">DISTANCIA RECORRIDA</td>
+						<td class="pink" colspan="2">
+							<span id="distancia"><span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<button id="inicio">INICIO</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<button id="fin">FIN</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>		
+	</body>
+</html>
